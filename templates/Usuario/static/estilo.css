@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+body{
+    background-color: aquamarine;
+
+}
+
+.home{
+    display: flex;
+    background: blue;
+}
+
+#cas{
+    flex: 1;
+    background: blueviolet;
+}
+
+.in-flex:first-child{
+    flex: 2;
+}

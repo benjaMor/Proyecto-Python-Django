@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <link rel="stylesheet" type="text.css" href= "static/estilo.css">
+        <meta name="viewpoet" content = "width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section class="home">
+        
+        <form method="post">
+                {% csrf_token %}
+                
+                <div class="in-flex" name= "cas" >
+                        <div class="col-md-9 col-md-offset-2">
+                                <div class = "form-group">
+                                        <label>Nombre</label>
+                                        <input class="form-control" type="text" name="first_name"> 
+                                </div>
+
+                        </div>
+                </div>
+
+                <div class="in-flex">
+                        <div class="col-md-9 col-md-offset-2">
+                                <div class = "form-group">
+                                        <label>Apellidos</label>
+                                        <input class="form-control" type="text" name="last_name"> 
+                                </div>
+
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-9 col-md-offset-2">
+                                <div class = "form-group">
+                                        <label>Nombre de usuario</label>
+                                        <input class="form-control" type="text" name="username"> 
+                                </div>
+
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-9 col-md-offset-2">
+                                <div class = "form-group">
+                                        <label>Correo electronico</label>
+                                        <input class="form-control" type="text" name="email"> 
+                                </div>
+
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-9 col-md-offset-2">
+                                <div class = "form-group">
+                                        <label>Contraseña</label>
+                                        <input class="form-control" type="password" name="password1"> 
+                                </div>
+
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-9 col-md-offset-2">
+                                <div class = "form-group">
+                                        <label>Confirmar Contraseña</label>
+                                        <input class="form-control" type="passaword" name="password2"> 
+                                </div>
+
+                        </div>
+                </div>
+
+
+
+
+                <button type="submit">Guardar</button>
+        </form>
+        
+
+</section>
+</body>
+</html>
